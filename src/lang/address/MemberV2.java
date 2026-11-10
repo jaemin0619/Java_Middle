@@ -1,0 +1,28 @@
+package lang.address;
+
+public class MemberV2 {
+    private String name;
+    private ImmutableAddress address;
+
+    public MemberV2(String name, ImmutableAddress address)
+    {
+        this.name=name;
+        this.address=address;
+    }
+    public ImmutableAddress getAddress()
+    {
+        return address;
+    }
+    public void setAdress(ImmutableAddress address)
+
+    {
+        this.address=address;
+    }
+    @Override
+    public String toString() {
+        return "Member{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                '}';
+    }
+}
